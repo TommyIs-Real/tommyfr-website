@@ -4,6 +4,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion"
 import { useRef, useState } from "react"
 import { ArrowUpRight, ExternalLink } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const projects = [
   {
