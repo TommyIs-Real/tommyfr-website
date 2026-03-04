@@ -91,6 +91,7 @@ export function ContactContent() {
                 Drop me a line
               </h3>
               <button
+                type="button"
                 onClick={handleCopy}
                 className="mt-3 inline-flex items-center gap-2 text-lg font-medium text-primary transition-opacity hover:opacity-80"
               >

@@ -108,6 +108,7 @@ export function WorkContent() {
         >
           {categories.map((cat) => (
             <button
+              type="button"
               key={cat}
               onClick={() => setActiveCategory(cat)}
               className={`relative rounded-lg px-5 py-2.5 text-sm font-medium transition-colors ${
@@ -119,7 +120,7 @@ export function WorkContent() {
               {activeCategory === cat && (
                 <motion.div
                   layoutId="work-filter"
-                  className="absolute inset-0 rounded-lg bg-secondary"
+                  className="absolute inset-0 rounded-lg bg-secondary pointer-events-none"
                   transition={{ type: "spring", stiffness: 350, damping: 30 }}
                 />
               )}
@@ -156,10 +157,13 @@ export function WorkContent() {
                   <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
 
                   <div className="absolute inset-0 flex items-center justify-center bg-background/60 opacity-0 backdrop-blur-sm transition-opacity group-hover:opacity-100">
-                    <div className="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground">
+                    <Link
+                      href="#"
+                      className="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground"
+                    >
                       <ExternalLink className="h-4 w-4" />
                       View Details
-                    </div>
+                    </Link>
                   </div>
                 </div>
 

@@ -78,7 +78,7 @@ export function Navigation() {
                   {isActive && (
                     <motion.div
                       layoutId="nav-indicator"
-                      className="absolute inset-0 rounded-lg bg-secondary"
+                      className="absolute inset-0 rounded-lg bg-secondary pointer-events-none"
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
                   )}
@@ -96,6 +96,7 @@ export function Navigation() {
           </Link>
 
           <button
+            type="button"
             onClick={() => setIsMobileOpen(!isMobileOpen)}
             className="flex h-10 w-10 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-secondary md:hidden"
             aria-label="Toggle menu"

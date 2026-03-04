@@ -48,9 +48,13 @@ function Button({
   }) {
   const Comp = asChild ? Slot : 'button'
 
+  // default to type="button" unless explicitly overridden
+  const type = (props as any).type || 'button'
+
   return (
     <Comp
       data-slot="button"
+      type={type}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />
