@@ -37,7 +37,7 @@ export function ContactContent() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("contact@tommyfr.xyz")
+    navigator.clipboard.writeText("tommy@tommyfr.xyz")
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -95,7 +95,7 @@ export function ContactContent() {
                 onClick={handleCopy}
                 className="mt-3 inline-flex items-center gap-2 text-lg font-medium text-primary transition-opacity hover:opacity-80"
               >
-                contact@tommyfr.xyz
+                tommy@tommyfr.xyz
                 {copied ? (
                   <Check className="h-4 w-4 text-primary" />
                 ) : (
