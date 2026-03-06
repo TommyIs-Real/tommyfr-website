@@ -16,7 +16,6 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Tommy.frrrr | Creative Portfolio',
   description: 'Bringing your vision to life. Creative design, development, and digital experiences by Tommy.frrrr.',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
