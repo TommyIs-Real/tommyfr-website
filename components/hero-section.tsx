@@ -44,7 +44,7 @@ export function HeroSection() {
         animate="visible"
         className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center"
       >
-        <motion.div variants={itemVariants} className="mb-6">
+        <motion.div variants={itemVariants} className="mb-12">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-medium text-muted-foreground">
             <Terminal className="h-3 w-3 text-primary" />
             Available for new projects
